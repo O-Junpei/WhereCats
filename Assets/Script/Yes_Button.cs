@@ -20,6 +20,6 @@ public class Yes_Button : MonoBehaviour {
 		
 
 
-		　}
+		}
 	
 }

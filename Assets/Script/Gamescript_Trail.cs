@@ -25,9 +25,9 @@ public class Gamescript_Trail : MonoBehaviour {
 	public Text perfect;
 	public Text score;
 
-	public GameObject　Judge_start_Button;
-	public GameObject　Retry_Button;
-	public GameObject　Restart_Button;
+	public GameObject Judge_start_Button;
+	public GameObject Retry_Button;
+	public GameObject Restart_Button;
 	public GameObject Back_Object;
 
 	private float nsecond;
@@ -62,7 +62,7 @@ public class Gamescript_Trail : MonoBehaviour {
 	private float score_t = 0.0f;
 	private float score_m = 0.0f;
 	private float score_p = 0.0f;
-	private Transform[]　ponints;
+	private Transform[] ponints;
 
 	private float m_progress = 0f;      //  進捗 [0, 1)
 	private int m_ix = 0;               //  現データインデックス
@@ -337,7 +337,6 @@ public class Gamescript_Trail : MonoBehaviour {
 						Vector3 pos = hit.collider.gameObject.transform.position;
 
 						pos.z = -5.5f;
-						　　　　
 						Debug.Log ("Hit!!!!");
 
 						if (hitName == objectsName) {

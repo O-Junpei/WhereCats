@@ -12,8 +12,8 @@ public class Extra_Retry_Button : MonoBehaviour {
 	}
 	
 	public void Click() {
-		　　// 「GameScene」シーンに遷移する
-		　　SceneManager.LoadScene("Extra");
-		　}
+		// 「GameScene」シーンに遷移する
+		SceneManager.LoadScene("Extra");
+		}
 
 }
