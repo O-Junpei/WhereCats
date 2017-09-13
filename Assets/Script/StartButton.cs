@@ -16,7 +16,7 @@ public class StartButton : UIBehaviour
 		audioSource.PlayOneShot(audioClip,audioClip.length);
 		StartCoroutine(waitTime());
 
-		　}
+		}
 
 	IEnumerator waitTime() {
 

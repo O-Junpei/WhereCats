@@ -19,6 +19,6 @@ public class No_Button : MonoBehaviour {
 
 
 
-		　}
+		}
 
 }

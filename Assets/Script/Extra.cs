@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Extra : MonoBehaviour {
 
-	public GameObject[]　gameObjects;
+	public GameObject[] gameObjects;
 	public GameObject[] neko;
 	private GameObject selectObjects;
 	public GameObject messagewindow;
