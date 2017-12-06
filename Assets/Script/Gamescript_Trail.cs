@@ -3,6 +3,12 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
+//FireBase
+using Firebase;
+using Firebase.Database;
+using Firebase.Unity.Editor;
+
+
 public class Gamescript_Trail : MonoBehaviour {
 
 	public int waypoint = 7;
@@ -78,7 +84,42 @@ public class Gamescript_Trail : MonoBehaviour {
 	private AudioSource audioSource;
 	private AudioClip clip;
 
+	// Firebase
+	private DatabaseReference _FirebaseDB;
+	private Firebase.Auth.FirebaseUser _FirebaseUser;
+
 	void Start () {
+
+
+		Debug.Log("Hello World");
+		// Firebase RealtimeDatabase接続初期設定
+		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://wherecats-18333.firebaseio.com");
+
+		// Databaseの参照先設定
+		_FirebaseDB = FirebaseDatabase.DefaultInstance.GetReference("Ranking");
+
+		_FirebaseDB.OrderByChild("score").LimitToLast(1).GetValueAsync().ContinueWith(task => {
+					if (task.IsFaulted) {
+						// 取得エラー
+						Debug.Log("[ERROR] get ranking sort");
+					} else if (task.IsCompleted) {
+						// 取得成功
+						Debug.Log("[INFO] get ranking success.");
+						DataSnapshot snapshot = task.Result;
+						IEnumerator<DataSnapshot> result = snapshot.Children.GetEnumerator();
+						int rank = 0;
+
+						string json = snapshot.GetRawJsonValue();
+
+
+					}
+				});
+
+/*
+		FirebaseDatabase.DefaultInstance
+			 .GetReference("ranking")
+			 .ValueChanged += HandleValueChanged;
+*/
 
 		audioSource = Target.GetComponent<AudioSource> ();
 		AudioClip clip = Target.GetComponent<AudioSource> ().clip;
@@ -223,8 +264,6 @@ public class Gamescript_Trail : MonoBehaviour {
 
 				m_progress = 0f;
 				++m_ix;
-
-
 
 				if (m_ix >= waypoint - 1) {
 
@@ -560,13 +599,13 @@ public class Gamescript_Trail : MonoBehaviour {
 
 			//ハイスコア保持を保持
 			if (LoadScene.Instance) {
-				
+
 				if (LoadScene.Instance.highScore < (int)totalScore) {
-									
+
 				LoadScene.Instance.highScore = (int)totalScore;
-				
+
 				}
-				
+
 			}
 
 				StartCoroutine ("restartWait");
