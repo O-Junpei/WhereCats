@@ -901,7 +901,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 223097966}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -440, z: 0}
+  m_LocalPosition: {x: 5, y: -400, z: 0}
   m_LocalScale: {x: 0.48955, y: 0.48955, z: 0.48955}
   m_Children:
   - {fileID: 644064658}
@@ -1133,7 +1133,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 362853662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -230, y: 605, z: 0}
+  m_LocalPosition: {x: -230, y: 565, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1779193987}
@@ -1553,7 +1553,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 515266830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 377, y: 605, z: 0}
+  m_LocalPosition: {x: 377, y: 565, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1779193987}
@@ -2944,7 +2944,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1010860308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -510, z: 0}
+  m_LocalPosition: {x: 5, y: -470, z: 0}
   m_LocalScale: {x: 0.48955, y: 0.48955, z: 0.48955}
   m_Children:
   - {fileID: 619499601}
@@ -3497,7 +3497,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1159825744}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -580, z: 0}
+  m_LocalPosition: {x: 5, y: -330, z: 0}
   m_LocalScale: {x: 0.48955, y: 0.48955, z: 0.48955}
   m_Children:
   - {fileID: 210134459}
@@ -3506,7 +3506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 5, y: 60}
+  m_AnchoredPosition: {x: 5, y: 270}
   m_SizeDelta: {x: 371, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159825746
@@ -3851,6 +3851,7 @@ MonoBehaviour:
   Judge_start_Button: {fileID: 1432279719}
   Retry_Button: {fileID: 1010860308}
   Restart_Button: {fileID: 223097966}
+  Ranking_Button: {fileID: 1159825744}
   Back_Object: {fileID: 1859607228}
   startWait: 1
   waittime: 0.3
@@ -5272,7 +5273,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779193983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400, y: 640, z: 0}
+  m_LocalPosition: {x: 400, y: 600, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 522371599}
