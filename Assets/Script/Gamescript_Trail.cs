@@ -28,6 +28,7 @@ public class Gamescript_Trail : MonoBehaviour {
 	public GameObject Judge_start_Button;
 	public GameObject Retry_Button;
 	public GameObject Restart_Button;
+	public GameObject Ranking_Button;
 	public GameObject Back_Object;
 
 	private float nsecond;
@@ -578,6 +579,7 @@ public class Gamescript_Trail : MonoBehaviour {
 
 				Retry_Button.SetActive (true);
 				Restart_Button.SetActive (true);
+				Ranking_Button.SetActive (true);
 
 			}
 
