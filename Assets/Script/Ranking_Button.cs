@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Ranking_Button : MonoBehaviour {
 	public void Click(){
 		SceneManager.LoadScene("Ranking");
+		print ("load scene");
 	}
 	// Use this for initialization
 	void Start () {
